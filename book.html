@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wandered Soul</title>
-    <link rel="shortcut icon" type="ico" href="Assets/favicon.ico">
-    <link rel="stylesheet" href="style1.css">  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wandered Soul | Book</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <a href="#" class="logo"></a>
+
+<body class="bg-dotted">
+  <header>
+    <a href="index.html" class="logo" aria-label="Home"></a>
+    <i class="fa-solid fa-bars hamburger"></i>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="plan.html">Plan</a></li>
+      <li><a href="book.html" class="active">Book</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="cards-container fade-in">
+      <div class="card flights">
+        <div class="card-bg"></div>
+        <div class="card-overlay">
+          <a href="https://www.makemytrip.com/flights/" target="_blank">Search Flights <i
+              class="fa-solid fa-plane-departure"></i></a>
+        </div>
+      </div>
+
+      <div class="card hotels">
+        <div class="card-bg"></div>
+        <div class="card-overlay">
+          <a href="https://www.trivago.in/" target="_blank">Search Hotels <i class="fa-solid fa-hotel"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="rating-section fade-in">
+      <div class="rating">User Satisfaction Rating</div>
+      <span>5.0</span>
+      <div class="star-rating">
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Gallery</h3>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="plan.html">Plan</a></li>
-            <li><a href="book.html">Book</a></li>
-            <li><a href="about.html">About</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Picks</a></li>
         </ul>
-    </header>
-    <div class="wrapper">
-        <div class="flights"><a href="https://www.makemytrip.com/flights/">Search for the best flights</a></div>
-        <div class="hotels"><a href="https://www.trivago.in/">Search for the best hotels</a></div>
+      </div>
+      <div class="footer-section">
+        <h3>Marketplace</h3>
+        <ul>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Best selling</a></li>
+          <li><a href="#">Latest</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Magazine</h3>
+        <ul>
+          <li><a href="#">Art skills</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-section form">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter to get your weekly dose of news, updates, tips and special offers.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
     </div>
-    <div class="rating">Rating by users :<br> 5</div>
-    <div class="star"></div>
-    <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Gallery</h3>
-            <ul>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Picks</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Marketplace</h3>
-            <ul>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Best selling</a></li>
-              <li><a href="#">Latest</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Magazine</h3>
-            <ul>
-              <li><a href="#">Art skills</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Inspiration</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </div>
-          <div class="footer-section form">
-            <h3>Newsletter</h3>
-            <p>Subscribe to our newsletter to get your weekly dose of news,updates,tips and special offers.</p>
-         <input type="email" placeholder="Enter your email address">
-         <button>Subscribe</button>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          &copy; Shashank Dey
-        </div>
-      </footer>  
+    <div class="footer-bottom">
+      &copy; 2026 Wandered Soul | Designed by Shashank Dey
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
